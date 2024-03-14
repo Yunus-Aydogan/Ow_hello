@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Resim boyutları */
+#takim {
+    width: 400px; 
+    height: 500px; 
+}
+
+/* Buton boyutları */
+#btnBasla {
+    background-color: rgb(197, 197, 197);
+    width: 150px; /* Genişlik */
+    height: 50px; /* Yükseklik */
+    font-size: 16px; /* Yazı boyutu */
+}
+
+
+#secenekler {
+    display: flex;
+    flex-wrap: wrap; /* Eğer butonlar yan yana sığmıyorsa, bir sonraki satıra geçmelerini sağlar */
+    justify-content: center; /* Butonları merkeze hizalar */
+}
+
+#secenekler > button {
+    width: auto; /* Butonların genişliğini içeriklerine göre otomatik ayarlar */
+    height: 30px; /* Yükseklik */
+    font-size: 16px; /* Yazı boyutu */
+    margin: 5px; /* Butonlar arasındaki boşluk */
+}
